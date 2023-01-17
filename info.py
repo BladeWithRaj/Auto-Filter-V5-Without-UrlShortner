@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = int(environ['25761845'])
+API_HASH = environ['bc84b3109a615cdc08d02f4c1576dcaa']
+BOT_TOKEN = environ['5985404227:AAG0_nazhUzUNnNJy6a1_mM-7YjmMBNV-Mc']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
@@ -28,35 +28,35 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/b60d2facc538ad82ad
 NEWGRP = environ.get("NEWGRP", "https://telegra.ph/file/705593c3ae56831c8e565.jpg")
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '0').split()]
-auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('5258668078', '').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get(-1001768029385', '0').split()]
+auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('5258668078', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-auth_channel = environ.get('AUTH_CHANNEL')
+auth_channel = environ.get('-1001798408136')
 auth_grp = environ.get('AUTH_GROUP')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 FILDLT_CNL = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('FILDLT_CNL', '0').split()]
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('mongodb+srv://BladeWithRaj:BladeWithRaj@cluster0.gnnlw3n.mongodb.net/?retryWrites=true&w=majority', "")
 DATABASE_NAME = environ.get('DATABASE_NAME', "EvaMaria")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/CyniteSupport')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/CyniteBackup')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', CyniteSupport')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/fake')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cynite')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', CyniteSuppot')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', 0))
-FILE_CHANNEL = int(environ.get('FILE_CHANNEL', 0))
+FILE_CHANNEL = int(environ.get('-1001768029385', 0))
 FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/Restricttest')
 
 # Log Channels
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
-RQST_LOG_CHANNEL = int(environ.get('RQST_LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('-1001676739936', 0))
+RQST_LOG_CHANNEL = int(environ.get('-1001676739936', 0))
 
 # Bot Options
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
