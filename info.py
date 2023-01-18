@@ -34,7 +34,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('-1001798408136')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
+AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(-1001798408136 else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 FILDLT_CNL = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('FILDLT_CNL', '0').split()]
 
@@ -44,15 +44,15 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "EvaMaria")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Channel Button Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/fake')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cynite')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/cynitesuppot')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Cynitesuppot')
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', CyniteSuppot')
 MSG_ALRT = environ.get('MSG_ALRT', 'Share and Support Us')
 
 # Custom Chats
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', 0))
 FILE_CHANNEL = int(environ.get('-1001768029385', 0))
-FILE_CHANNEL_LINK = environ.get('FILE_CHANNEL_LINK', 't.me/Restricttest')
+FILE_CHANNEL_LINK = environ.get('https://t.me/+rrNeKI-wlcw5ZTJl', 't.me/Restricttest')
 
 # Log Channels
 LOG_CHANNEL = int(environ.get('-1001676739936', 0))
